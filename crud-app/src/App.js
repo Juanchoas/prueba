@@ -5,7 +5,7 @@ import NavBar from './Component/NavBar';
 import AllProducts from './Component/AllProducts';
 import NotFound from './Component/NotFound'; 
 import AddProduct from './Component/AddProduct';
-import CodeForInterview from './Component/CodeForInterview';
+import Losdesamparados from './Component/Losdesamparados';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Switch>
-        <Route exact path="/" component={CodeForInterview} />
+        <Route exact path="/" component={Losdesamparados} />
         <Route exact path="/all" component={AllUsers} />
         <Route exact path="/add" component={AddUser} />
         <Route exact path="/edit/:id" component={EditUser} />

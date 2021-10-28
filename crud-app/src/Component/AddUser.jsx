@@ -38,25 +38,25 @@ const AddUser = () => {
 
     return (
         <FormGroup className={classes.container}>
-            <Typography variant="h4">Add User</Typography>
+            <Typography variant="h4">Agregar usuario</Typography>
             <FormControl>
-                <InputLabel htmlFor="my-input">Name</InputLabel>
+                <InputLabel htmlFor="my-input">Nombre</InputLabel>
                 <Input onChange={(e) => onValueChange(e)} name='name' value={name} id="my-input" />
             </FormControl>
             <FormControl>
-                <InputLabel htmlFor="my-input">Username</InputLabel>
+                <InputLabel htmlFor="my-input">Nombre de usuario</InputLabel>
                 <Input onChange={(e) => onValueChange(e)} name='username' value={username} id="my-input" />
             </FormControl>
             <FormControl>
-                <InputLabel htmlFor="my-input">Email</InputLabel>
+                <InputLabel htmlFor="my-input">Correo electrónico</InputLabel>
                 <Input onChange={(e) => onValueChange(e)} name='email' value={email} id="my-input"/>
             </FormControl>
             <FormControl>
-                <InputLabel htmlFor="my-input">Phone</InputLabel>
+                <InputLabel htmlFor="my-input">Teléfono</InputLabel>
                 <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
             </FormControl>
             <FormControl>
-                <Button variant="contained" color="primary" onClick={() => addUserDetails()}>Add User</Button>
+                <Button variant="contained" color="primary" onClick={() => addUserDetails()}>Agregar usuario</Button>
             </FormControl>
         </FormGroup>
     )

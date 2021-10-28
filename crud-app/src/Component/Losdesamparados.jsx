@@ -1,6 +1,6 @@
 import { Box, Typography, makeStyles } from '@material-ui/core';
-import Youtube from '../Assets/Images/youtube.png';
-import InstaTele from '../Assets/Images/InstaTele.jpeg';
+import FondoDesamparados from '../Assets/Images/losdesamparados.jpg';
+
 
 const useStyles = makeStyles({
     component: {
@@ -10,8 +10,8 @@ const useStyles = makeStyles({
         }
     },
     image: {
-        width: '50%',
-        height: '50%'
+        width: '95%',
+        height: '100%'
     }
 })
 
@@ -19,10 +19,10 @@ const CodeForInterview = () => {
     const classes = useStyles();
     return (
         <Box className={classes.component}>
-            <Typography variant="h4">Code for Interview</Typography>
+            <Typography variant="h4">Grupo los Desamparados</Typography>
             <Box style={{display: 'flex'}}>
-                <img src={Youtube} className={classes.image} />
-                <img src={InstaTele} className={classes.image} />
+                <img src={FondoDesamparados} className={classes.image} />
+                
             </Box>
         </Box>
     )

@@ -4,10 +4,10 @@ import { addProduct } from '../Service/api';
 import { useHistory } from 'react-router-dom';
 
 const initialValue = {
-    name: '',
-    username: '',
-    email: '',
-    phone: ''
+    productname: '',
+    price: '',
+    amount: '',
+    status: ''
 }
 
 const useStyles = makeStyles({
@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 
 const AddProduct = () => {
     const [product, setProduct] = useState(initialValue);
-    const { name, username, email, phone } = product;
+    const { productname, price, amount, status } = product;
     const classes = useStyles();
     let history = useHistory();
 
@@ -38,25 +38,25 @@ const AddProduct = () => {
 
     return (
         <FormGroup className={classes.container}>
-            <Typography variant="h4">Add User</Typography>
+            <Typography variant="h4">Agregar producto</Typography>
             <FormControl>
-                <InputLabel htmlFor="my-input">Name</InputLabel>
-                <Input onChange={(e) => onValueChange(e)} name='name' value={name} id="my-input" />
+                <InputLabel htmlFor="my-input">Nombre del producto</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='productname' value={productname} id="my-input" />
             </FormControl>
             <FormControl>
-                <InputLabel htmlFor="my-input">Username</InputLabel>
-                <Input onChange={(e) => onValueChange(e)} name='username' value={username} id="my-input" />
+                <InputLabel htmlFor="my-input">Precio</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='price' value={price} id="my-input" />
             </FormControl>
             <FormControl>
-                <InputLabel htmlFor="my-input">Email</InputLabel>
-                <Input onChange={(e) => onValueChange(e)} name='email' value={email} id="my-input"/>
+                <InputLabel htmlFor="my-input">Cantidad</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='amount' value={amount} id="my-input"/>
             </FormControl>
             <FormControl>
-                <InputLabel htmlFor="my-input">Phone</InputLabel>
-                <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
+                <InputLabel htmlFor="my-input">Estado</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='status' value={status} id="my-input" />
             </FormControl>
             <FormControl>
-                <Button variant="contained" color="primary" onClick={() => addProductDetails()}>Add User</Button>
+                <Button variant="contained" color="primary" onClick={() => addProductDetails()}>Agregar producto</Button>
             </FormControl>
         </FormGroup>
     )

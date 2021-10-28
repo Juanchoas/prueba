@@ -19,10 +19,10 @@ const NavBar = () => {
         <AppBar position="static" className={classes.header}>
             <Toolbar>
                 <NavLink className={classes.tabs} to="./" exact>Los Desamparados APP</NavLink>
-                <NavLink className={classes.tabs} to="all" exact>All Users</NavLink>
-                <NavLink className={classes.tabs} to="add" exact>Add User</NavLink>
-                <NavLink className={classes.tabs} to="products" exact>All products</NavLink>
-                <NavLink className={classes.tabs} to="addproduct" exact>Add products</NavLink>
+                <NavLink className={classes.tabs} to="all" exact>Usuarios</NavLink>
+                <NavLink className={classes.tabs} to="add" exact>Agregar usuario</NavLink>
+                <NavLink className={classes.tabs} to="products" exact>Productos</NavLink>
+                <NavLink className={classes.tabs} to="addproduct" exact>Agregar productos</NavLink>
 
             </Toolbar>
         </AppBar>

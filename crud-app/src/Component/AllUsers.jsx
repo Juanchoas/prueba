@@ -46,10 +46,10 @@ const AllUsers = () => {
             <TableHead>
                 <TableRow className={classes.thead}>
                     <TableCell>Id</TableCell>
-                    <TableCell>Name</TableCell>
-                    <TableCell>Username</TableCell>
-                    <TableCell>Email</TableCell>
-                    <TableCell>Phone</TableCell>
+                    <TableCell>Nombre</TableCell>
+                    <TableCell>Nombre de usuario</TableCell>
+                    <TableCell>Correo electrónico</TableCell>
+                    <TableCell>Teléfono</TableCell>
                     <TableCell></TableCell>
                 </TableRow>
             </TableHead>
